@@ -17,7 +17,7 @@
             animation: spinner 1s infinite linear;
             border-radius: 50%;
             border: 3px solid rgba(0, 0, 0, 0.2);
-            border-top-color: $theme-color-2;
+            border-top-color: $theme-color;
             height: 9em;
             margin: 0 auto 3.5em auto;
             width: 9em;
@@ -39,7 +39,7 @@
             }
 
             .letters-loading {
-                color: $theme-color-2;
+                color: $theme-color;
                 position: relative;
 
                 &:nth-child(2):before {
@@ -90,7 +90,7 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 8px;
-        color: $theme-color-2;
+        color: $theme-color;
     }
 
     .loader {

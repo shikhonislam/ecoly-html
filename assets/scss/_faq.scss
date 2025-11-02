@@ -98,6 +98,33 @@
                     padding: 16px 15px 16px 25px;
                     color: $header-color;
                 }
+
+                &.color-2 {
+                    background-color: $theme-color-2;
+                    color: $white;
+
+                    &:not(.collapsed)::after {
+                    content: "\f068";
+                    background: transparent;
+                    font-family: $fa;
+                    font-weight: 500;
+                    transform: rotate(0);
+                    color: #000000;
+                    width: 39px;
+                    height: 39px;
+                    line-height: 39px;
+                    text-align: center;
+                    background-color: #EBFA9E;
+                    }
+
+                    &.collapsed {
+                        border-radius: 12px;
+                        background: transparent;
+                        border: 1px solid rgba(25, 42, 25, 0.14);
+                        padding: 16px 15px 16px 25px;
+                        color: $header-color;
+                    }
+                }
             }
         }
 
@@ -237,6 +264,25 @@
             margin-top: 10px;
 
             a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.faq-section-444 {
+    .section-title-area {
+        .theme-btn {
+            background-color: transparent;
+            border: 1px solid $theme-color-2;
+            color: $theme-color-2;
+
+            i {
+                background-color: $theme-color-2;
+                color: $white;
+            }
+
+            &:hover {
                 color: $white;
             }
         }

@@ -2062,6 +2062,17 @@ span {
   z-index: 9;
 }
 
+.counter-wrapper-222 {
+  border-radius: 20px;
+  background: #E6E6E6;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -5%;
+  position: relative;
+  z-index: 9;
+}
+
 .counter-section-2 .container {
   max-width: 1390px;
 }
@@ -2130,6 +2141,9 @@ span {
 }
 .contact-form-box-2 .form-clt textarea {
   padding-bottom: 100px;
+}
+.contact-form-box-2 .form-clt.color-2 {
+  background: var(--white);
 }
 
 .contact-left-image-style-5 {
@@ -3674,6 +3688,30 @@ span {
   padding: 16px 15px 16px 25px;
   color: var(--header);
 }
+.faq-right-items-style-4 .accordion-item .accordion-header .accordion-button.color-2 {
+  background-color: var(--theme-2);
+  color: var(--white);
+}
+.faq-right-items-style-4 .accordion-item .accordion-header .accordion-button.color-2:not(.collapsed)::after {
+  content: "\f068";
+  background: transparent;
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 500;
+  transform: rotate(0);
+  color: #000000;
+  width: 39px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+  background-color: #EBFA9E;
+}
+.faq-right-items-style-4 .accordion-item .accordion-header .accordion-button.color-2.collapsed {
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(25, 42, 25, 0.14);
+  padding: 16px 15px 16px 25px;
+  color: var(--header);
+}
 .faq-right-items-style-4 .accordion-item .accordion-collapse .accordion-body {
   padding-left: 30px;
   padding-top: 15px;
@@ -3794,6 +3832,19 @@ span {
   margin-top: 10px;
 }
 .faq-left-image-style-6 .faq-contact p a {
+  color: var(--white);
+}
+
+.faq-section-444 .section-title-area .theme-btn {
+  background-color: transparent;
+  border: 1px solid var(--theme-2);
+  color: var(--theme-2);
+}
+.faq-section-444 .section-title-area .theme-btn i {
+  background-color: var(--theme-2);
+  color: var(--white);
+}
+.faq-section-444 .section-title-area .theme-btn:hover {
   color: var(--white);
 }
 
@@ -7779,17 +7830,18 @@ span {
   background: linear-gradient(260.52deg, rgba(0, 0, 0, 0.28) 18.32%, rgba(0, 0, 0, 0.55) 72.9%);
 }
 .breadcrumb-wrapper .page-heading {
-  padding: 145px 0;
+  padding: 290px 0 145px;
   position: relative;
 }
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .breadcrumb-wrapper .page-heading {
-    padding: 100px 0;
+    padding-top: 200px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .breadcrumb-wrapper .page-heading {
-    padding: 80px 0;
+    text-align: center;
+    padding-top: 175px;
   }
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-list {
@@ -7797,6 +7849,11 @@ span {
   align-items: center;
   gap: 6px;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .breadcrumb-wrapper .page-heading .breadcrumb-list {
+    justify-content: center;
+  }
 }
 .breadcrumb-wrapper .page-heading .breadcrumb-list li {
   font-weight: 500;
@@ -7807,20 +7864,51 @@ span {
   font-weight: 700;
   color: var(--white);
 }
-@media (max-width: 1399px) {
+@media (max-width: 767px) {
   .breadcrumb-wrapper .page-heading .breadcrumb-title {
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 991px) {
-  .breadcrumb-wrapper .page-heading .breadcrumb-title {
-    margin-bottom: 50px;
+    font-size: 85px;
   }
 }
 @media (max-width: 575px) {
   .breadcrumb-wrapper .page-heading .breadcrumb-title {
+    font-size: 55px;
+  }
+}
+
+.error-items {
+  text-align: center;
+}
+.error-items .thumb {
+  max-width: 795px;
+  margin: 0 auto;
+}
+.error-items .thumb img {
+  width: 100%;
+  height: 100%;
+}
+.error-items .content {
+  max-width: 760px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+.error-items .content h2 {
+  font-size: 55px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (max-width: 991px) {
+  .error-items .content h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 575px) {
+  .error-items .content h2 {
     font-size: 40px;
   }
+}
+.error-items .content .theme-btn {
+  border: 1px solid transparent;
+  margin-top: 40px;
 }
 
 ::-webkit-scrollbar {
@@ -10993,7 +11081,7 @@ span {
   animation: spinner 1s infinite linear;
   border-radius: 50%;
   border: 3px solid rgba(0, 0, 0, 0.2);
-  border-top-color: var(--theme-2);
+  border-top-color: var(--theme);
   height: 9em;
   margin: 0 auto 3.5em auto;
   width: 9em;
@@ -11016,7 +11104,7 @@ span {
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
-  color: var(--theme-2);
+  color: var(--theme);
   position: relative;
 }
 .preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
@@ -11056,7 +11144,7 @@ span {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: var(--theme-2);
+  color: var(--theme);
 }
 .preloader .loader {
   position: fixed;

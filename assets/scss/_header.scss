@@ -1832,21 +1832,26 @@
 	}
 
 	.page-heading {
-		padding: 145px 0;
+		padding: 290px 0 145px;
 		position: relative;
 
-		@include breakpoint (max-xxl) {
-                 padding: 100px 0;
-            }
+		@include breakpoint (max-xl){
+			padding-top: 200px;
+		}
 
-			@include breakpoint (max-lg) {
-                padding: 80px 0;
-            }
+		@include breakpoint (max-md){
+			text-align: center;
+			padding-top: 175px;
+		}
 
 		.breadcrumb-list {
 			@include flex;
 			gap: 6px;
 			margin-bottom: 10px;
+
+			@include breakpoint (max-md){
+				justify-content: center;
+			}
 
 			li {
 				font-weight: 500;
@@ -1859,17 +1864,52 @@
             font-weight: 700;
 			color: $white;
 
-			@include breakpoint (max-xxl) {
-                margin-bottom: 60px;
+			@include breakpoint (max-md) {
+                font-size: 85px;
             }
 
+			@include breakpoint (max-sm) {
+               font-size: 55px;
+            }
+		}
+	}
+}
+
+
+.error-items {
+	text-align: center;
+
+	.thumb {
+		max-width: 795px;
+		margin: 0 auto;
+
+		img {
+			@include imgw;
+		}
+	}
+
+	.content {
+		max-width: 760px;
+		margin: 40px auto 0;
+		text-align: center;
+
+		h2 {
+			font-size: 55px;
+			font-weight: 400;
+			margin-bottom: 15px;
+
 			@include breakpoint (max-lg) {
-                margin-bottom: 50px;
+               font-size: 45px;
             }
 
 			@include breakpoint (max-sm) {
                font-size: 40px;
             }
+		}
+
+		.theme-btn {
+            border: 1px solid transparent;
+			margin-top: 40px;
 		}
 	}
 }
